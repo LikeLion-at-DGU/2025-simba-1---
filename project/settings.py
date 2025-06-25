@@ -16,7 +16,15 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-ALLOWED_HOSTS = ['*']  # Allow all hosts for development purposes
+ALLOWED_HOSTS = [
+    'localhost',
+    '3596-210-94-220-230.ngrok-free.app',  # Ngrok URL for development
+    '127.0.0.1'
+]  # Allow all hosts for development purposes
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://3596-210-94-220-230.ngrok-free.app'
+]
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
