@@ -93,9 +93,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 모든 필드 초기화
     inputFields.forEach((field) => {
+      const input = field.querySelector("input");
+      if (input && input.id === "username") return;
       field.classList.remove("error", "success");
       const img = field.querySelector("img");
-      const input = field.querySelector("input");
+      
       if (img && input)
         img.src =
           input.dataset.defaultIcon || "/static/icons/account_default.svg";
