@@ -29,8 +29,9 @@ body {
 
 .topnav {
   display: flex;
-  height: 51px;
-  padding: 6px 8px;
+  height: 98px;
+  width: 375px;
+  padding: 47px 8px 6px 8px;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
@@ -38,7 +39,7 @@ body {
   flex-shrink: 0;
   align-self: stretch;
   border-bottom: 1px solid var(--primary-001, #ff5722);
-  margin-top: 47px;
+  background: #FFF;
 }
 
 .topnav_inframe {
@@ -48,6 +49,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
+  margin-top: auto;
 }
 
 .icon_container {
