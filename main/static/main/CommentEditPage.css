@@ -130,6 +130,7 @@ section {
 .comment_card {
   display: flex;
   width: 100%;
+  
   padding: 15px;
   box-sizing: border-box;
   flex-direction: column;
@@ -234,7 +235,8 @@ textarea {
   font-weight: 400;
 
   transition: border-color 0.2s, box-shadow 0.2s;
-  resize: vertical;
+  height: 100px;
+  resize: none;
   overflow: auto;
 }
 ::-webkit-scrollbar {
