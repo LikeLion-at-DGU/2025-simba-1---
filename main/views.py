@@ -46,7 +46,7 @@ def eventperiod(event):
             return '하순'
 
     elif event.start == 21:
-        if event.end < 31:
+        if event.end <= 31:
             return '말'
     else:
         return ''
